@@ -1,10 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
-project(myproject)
+project(cml)
 
-file(GLOB_RECURSE sources src/main/*.cpp src/main/*.h)
+file(GLOB_RECURSE test src/main/*.cpp src/main/*.h)
+file(GLOB_RECURSE sources src/cml/*.h src/cml/*.cpp)
 file(GLOB_RECURSE data res/*)
 
-add_executable(myproject ${sources})
-target_include_directories(myproject PUBLIC src/)
+add_executable(cml ${sources} ${test})
+target_include_directories(cml PUBLIC src/)
 
 file(COPY ${data} DESTINATION res)

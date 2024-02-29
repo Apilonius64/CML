@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/myproject",
+            "program": "${workspaceFolder}/build/cml",
             "args": [],
             "preLaunchTask": "CMake: build",
             "stopAtEntry": false,
